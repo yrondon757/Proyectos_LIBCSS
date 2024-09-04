@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-x-hidden">
+    <main class="h-screen w-screen absolute" style="background-image: url('https://wallpapercave.com/wp/wp4061432.jpg'); background-size: cover;">
+        <div class="h-screen w-[1120px] flex justify-center items-center">
+            <div class="border-solid border-[1px] border-red-600 h-[700px] w-[700px] flex flex-col justify-evenly items-center rounded-[40px]">
+                <div class="flex flex-col justify-center items-center py-[-10px] mb-[5px] gap-7">
+                    <div class="text-white text-[45px] font-bold font-serif">
+                        <h1>Formulario de Contacto</h1>
+                    </div>
+                    <div class="text-white text-[18px] font-medium font-serif">
+                        <p>Los Campos Marcados con <span style="color: red;">*</span> son obligatorios</p>
+                    </div>
+                </div>
+                    <form action="">
+                        <div class="flex flex-col justify-start items-start gap-2 mb-10">
+                            <div class="flex justify-center items-center gap-7">
+                                <label class="text-white font-serif font-bold" for="nombreyapellido">Nombre Completo <span style="color: red;"> *</span></label>
+                                <div>
+                                    <input class="rounded-lg h-[35px] w-[200px] px-3 focus:outline-none focus:ring-4 focus:ring-red-800" type="text" name="nombreyapellido" id="nombreyapellido" placeholder="Primer Nombre">
+                                    <input class="rounded-lg h-[35px] w-[200px] px-3 focus:outline-none focus:ring-4 focus:ring-red-800" type="text" name="nombreyapellido" id="nombreyapellido" placeholder="Primer Apellido">
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-[107px]">
+                                <label class="text-white font-serif font-bold" for="telefono">Telefono <span style="color: red;"> *</span></label>
+                                <div>
+                                    <input class="rounded-lg h-[35px] w-[404px] px-3 focus:outline-none focus:ring-4 focus:ring-red-800" type="number" name="telefono" id="telefono" placeholder="Nro. Telefonico">
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-[22px]">
+                                <label class="text-white font-serif font-bold" for="email">Correo Electronico <span style="color: red;"> *</span></label>
+                                <div>
+                                    <input class="rounded-lg h-[35px] w-[404px] px-3 focus:outline-none focus:ring-4 focus:ring-red-800" type="email" name="email" id="email" placeholder="ingresa tu correo">
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-[22px]">
+                                <label class="text-white font-serif font-bold" for="fdenacimiento">Fecha de nacimiento</label>
+                                <div>
+                                    <input class="rounded-lg h-[35px] w-[404px] px-3 focus:outline-none focus:ring-4 focus:ring-red-800" type="date" name="fdenacimiento" id="fdenacimiento" min="1970/01/01" max="2002-12-12">
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-[152px]">
+                                <label class="text-white font-serif font-bold" for="sexo">Sexo</label>
+                                <div>
+                                    <label class="text-cyan-500 font-serif font-bold" for="sexo">M</label>
+                                    <input class="focus:outline-none focus:ring-2 focus:ring-red-800" type="checkbox" name="sexo">
+                                    <label class="text-pink-500 font-serif font-bold pl-5" for="sexo">F</label>
+                                    <input class="focus:outline-none focus:ring-2 focus:ring-red-800" type="checkbox" name="sexo" id="">
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-[146px]">
+                                <label class="text-white font-serif font-bold" class="text-white" for="direccion">Pais<span style="color: red;"> *</span></label>
+                                <select class="rounded-lg h-[35px] w-[404px] focus:outline-none focus:ring-4 focus:ring-red-800" name="direccion" id="">
+                                    <option value="" selected disabled>Selecciona Tu Pais</option>
+                                    <option value="+58">Venezuela</option>
+                                    <option value="+57">Colombia</option>
+                                    <option value="+54">Argentina</option>
+                                    <option value="+51">Peru</option>
+                                    <option value="+593">Ecuador</option>
+                                    <option value="+598">Uruguay</option>
+                                    <option value="+1">EE.UU</option>
+                                    <option value="+34">España</option>
+                                </select>
+                            </div>
+                            <div class="flex justify-center items-center gap-[125px]">
+                                <label class="text-white font-serif font-bold" for="estado">Estado<span style="color: red;"> *</span></label>
+                                <div>
+                                    <input class="rounded-lg h-[35px] w-[404px] focus:outline-none focus:ring-4 focus:ring-red-800" type="text" name="estado" id="" placeholder="Ingresa tu Estado">
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-[135px]">
+                                <label class="text-white font-serif font-bold" for="ciudad">Ciudad</label>
+                                <input class="rounded-lg h-[35px] w-[404px] focus:outline-none focus:ring-4 focus:ring-red-800" type="text" name="ciudad" placeholder="Ingresa tu Ciudad">
+                            </div>
+                        <div class="gb-white flex flex-col justify-center items-center h-[10px] w-[580px] mt-[50px]">
+                            <label for="submit"></label>
+                            <input class="bg-red-800 w-[280px] text-[25px] font-serif font-bold rounded-3xl cursor-pointer hover:bg-red-600 hover:text-white" type="submit" value="Enviar" id="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
