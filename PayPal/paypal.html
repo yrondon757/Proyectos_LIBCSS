@@ -7,7 +7,7 @@
     <!-- TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="overflow-x-hidden">
     <header class="flex justify-between items-center h-[75px] px-[400px]">
         <div>
             <img class="w-[140px]" src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg" alt="Logo de PayPal">
@@ -87,7 +87,7 @@
             <h3 class="text-[#4a4a4a] text-[1.25rem] font-sans font-normal mt-4">PayPal se acepta en sitios web, tanto grandes como pequeños. Ayudamos a conectar a nuestros clientes con marcas de todo el</h3>
             <h3 class="text-[#4a4a4a] text-[1.25rem] font-sans font-normal">mundo.*</h3>
         </div>
-        <div class="flex justify-between items-center w-screen h-[150px] px-[450px]">
+        <div class="flex justify-between items-center w-screen h-[150px] px-[450px] gap-10">
             <img class="w-[180px]" src="https://www.paypalobjects.com/digitalassets/c/website/marketing/latam/shared/home/logos/img_facebook.jpg" alt="">
             <img class="w-[180px]" src="https://www.paypalobjects.com/digitalassets/c/website/marketing/latam/shared/home/logos/img_fortnite.jpg" alt="">
             <img class="w-[180px]" src="https://www.paypalobjects.com/digitalassets/c/website/marketing/latam/shared/home/logos/img_microsoft.jpg" alt="">
@@ -100,13 +100,52 @@
         </div>
     </section>
 
-    <footer class="w-screen h-[350px] bg-[#f5f7fa] mt-5 flex justify-center items-center">
+    <div class="w-screen h-[350px] bg-[#f5f7fa] mt-5 flex justify-center items-center">
         <div class="flex flex-col justify-center items-center gap-3">
             <h2 class="text-[#4a4a4a] text-[2.5rem] font-sans font-light">¿Tienes dudas sobre tu cuenta o tus compras?</h2>
             <p class="text-[1.25rem] font-light">Visita nuestro centro de <a class="text-[#005ea6] font-bold hover:underline" href="https://www.paypal.com/ve/cshelp/contact-us">Ayuda</a> o pregunta en nuestro Foro de la comunidad.</p>
             <div class="flex flex-col justify-center items-center gap-2">
                 <button class="bg-[#0271ba] hover:bg-[#005ea6] rounded-[30px] border-[1px] px-5 py-4 w-[320px] text-[1rem] text-white font-bold mt-6">Registrate sin costo</button>
                 <a class="text-[#005ea6] font-bold hover:underline text-[13px]" href="https://www.paypal.com/ve/home#">Vea nuestras preguntas frecuentes</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class=" flex justify-center items-center h-[210px] w-screen">
+        <div class="h-[130px] w-[1100px]">
+            <div class="flex justify-between items-center border-b-[0.5px] border-[#687173] py-2">
+                <ul class="text-[#2c2e2f] flex justify-center items-center gap-5 text-[14px] font-bold">
+                    <li class="hover:underline"><a href="https://www.paypal.com/ve/cshelp/personal?locale.x=es_VE">Ayuda</a></li>
+                    <li class="hover:underline"><a href="https://www.paypal.com/ve/cshelp/contact-us?locale.x=es_VE">Contactanos</a></li>
+                    <li class="hover:underline"><a href="https://www.paypal.com/ve/webapps/mpp/paypal-fees?locale.x=es_VE">Comisiones</a></li>
+                    <li class="hover:underline"><a href="https://www.paypal.com/ve/webapps/mpp/paypal-safety-and-security?locale.x=es_VE">Seguridad</a></li>
+                    <li class="hover:underline"><a href="https://www.paypal.com/ve/webapps/mpp/shop?locale.x=es_VE">Comprar</a></li>
+                </ul>
+                <div class="text-[#2c2e2f] flex justify-center items-center gap-2 text-[14px] font-bold">
+                    <a class="hover:underline border-r-[0.1px] border-[#687173] border- px-2" href="https://www.paypal.com/ve/home?locale.x=en_VE">English</a>
+                    <a class="hover:underline" href="https://www.paypal.com/ve/webapps/mpp/country-worldwide?locale.x=es_VE">🇻🇪</a>
+                </div>
+            </div>
+            <div class="flex justify-between items-center py-3">
+                <ul class="text-[#687173] flex justify-center items-center gap-5 text-[14px] font-bold">
+                    <li class="hover:underline"><a href="https://www.paypal.com/ve/webapps/mpp/about?locale.x=es_VE">Acerca de PayPal</a></li>
+                    <li class="hover:underline"><a href="https://www.paypal.com/ve/cshelp/contact-us?locale.x=es_VE">Newsroom</a></li>
+                    <li class="hover:underline"><a href="https://careers.pypl.com/home/">Empleos</a></li>
+                    <li class="hover:underline"><a href="https://developer.paypal.com/home/">Desarrolladores</a></li>
+                    <li class="hover:underline"><a href="https://www.paypal.com/ve/webapps/mpp/merchant?locale.x=es_VE">Partners</a></li>
+                </ul>
+                <div>
+                    <ul class="text-[#687173] flex justify-center items-center gap-5 text-[14px] font-bold">
+                        <li>© 1999–2024</li>
+                        <li class="hover:underline"><a href="https://www.paypal.com/ve/webapps/mpp/accessibility?locale.x=es_VE">Accesibilidad</a></li>
+                        <li class="hover:underline"><a href="https://www.paypal.com/myaccount/privacy/privacyhub?locale.x=es_VE">Privacidad</a></li>
+                        <li class="hover:underline"><a href="https://www.paypal.com/myaccount/privacy/cookiePrefs?locale.x=es_VE">Cookies</a></li>
+                        <li class="hover:underline"><a href="https://www.paypal.com/ve/legalhub/home?locale.x=es_VE">Acuerdos legales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-[#687173] flex justify-start items-center text-[0.8rem] mt-[0.5px]">
+                <p>PayPal Pte. Ltd. tiene licencia otorgada por la Autoridad Monetaria de Singapur como Institución de Pago Principal en virtud de la Ley de Servicios de Pago de 2019.</p>
             </div>
         </div>
     </footer>
