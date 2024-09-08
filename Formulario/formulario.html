@@ -6,10 +6,13 @@
     <title>Formulario</title>
     <!-- TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="overflow-x-hidden">
     <main class="h-screen w-screen absolute" style="background-image: url('https://wallpapercave.com/wp/wp4061432.jpg'); background-size: cover;">
-        <div class="h-screen w-[1120px] flex justify-center items-center">
+        <div class="h-screen w-[1120px] flex justify-center items-center" data-aos="fade-right" data-aos-offset="500" data-aos-duration="800">
             <div class="border-solid border-[1px] border-red-600 h-[700px] w-[700px] flex flex-col justify-evenly items-center rounded-[40px]">
                 <div class="flex flex-col justify-center items-center py-[-10px] mb-[5px] gap-7">
                     <div class="text-white text-[45px] font-bold font-serif">
@@ -88,5 +91,8 @@
             </div>
         </div>
     </main>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
